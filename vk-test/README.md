@@ -1,50 +1,12 @@
-# React + TypeScript + Vite
+# Тестовое задание на стажировку в VK
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Описание приложения
+Приложение предназначено для отображения списка репозиториев на GitHub с плавной анимацией. Пользователь может переходить в репозиторий, кликнув на название или изображение. Также предусмотрена возможность редактирования названия репозитория или его удаления.
 
-Currently, two official plugins are available:
+В правом верхнем углу находится меню, при нажатии на которое открывается модальное окно. С их помощью можно отфильтровать репозитории по годам создания.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Стек: React, TS, MobX, VK UI, React Infinity Scroller, Vite
 
-## Expanding the ESLint configuration
+Выбрал в качестве библиотеки компонентов VK UI, так как у меня есть опыт работы с этой библиотекой, а так же закрепить знания.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Сайт для просмотра: [https://test-vk.netlify.app/](https://vk-test-list.netlify.app/)
